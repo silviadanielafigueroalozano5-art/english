@@ -1,15 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: #087c00b2;
 }
 
-.nav-box{
+.nav-box {
     background-color: #f9f0e1;
     height: 100px;
     border-radius: 45px 45px 0 0;
@@ -17,16 +17,16 @@ body{
     justify-content: space-evenly;
 }
 
-.box-left{
+.box-left {
     display: flex;
     align-items: center;
 }
 
-.box-right{
+.box-right {
     align-items: right;
 }
 
-.box-right{
+.box-right {
     display: flex;
     align-items: center;
     gap: 70px;
@@ -34,13 +34,13 @@ body{
 }
 
 
-.box-right a{
+.box-right a {
     text-decoration: none;
     color: black;
 }
 
 
-.whatsapp-contact a{
+.whatsapp-contact a {
     background-color: green;
     color: white;
     padding: 10px;
@@ -49,45 +49,45 @@ body{
     width: 150px;
 }
 
-.icon1{
+.icon1 {
     height: 100px;
 }
 
 
-.icon2{
+.icon2 {
     height: 40px;
     position: absolute;
     margin-left: 90px;
 }
 
 
-.text1{
+.text1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.text2{
-   font-family: 'Great Vibes'; 
+.text2 {
+    font-family: 'Great Vibes';
     font-size: 2rem;
-   }
+}
 
-a:hover{
+a:hover {
     color: rgba(121, 0, 0, 0.574);
 }
 
-.imagen2{
+.imagen2 {
     width: 100%;
-    filter: 
-    brightness(0.4) 
+    filter:
+        brightness(0.4)
 }
 
-.Box-Container1{
+.Box-Container1 {
     position: relative;
     top: -500px;
     text-align: center;
 }
 
 
-.Box-Container1 a{
+.Box-Container1 a {
     text-decoration: none;
     background-color: green;
     color: white;
@@ -103,113 +103,221 @@ a:hover{
 }
 
 
-.text3{
+.text3 {
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 4rem;
 }
 
-.text4{
+.text4 {
     font-family: 'Great Vibes', cursive;
     font-size: 5rem;
     color: rgb(133, 55, 0);
 }
 
-.text5{
+.text5 {
     color: rgb(255, 245, 98);
     font-size: 2rem;
 }
 
-.text6{
+.text6 {
     color: white;
     position: relative;
     top: 100px;
 }
 
 
-.Box-Container2{
+.Box-Container2 {
+    position: relative;
+    top: -275px;
     background-color: #f9f0e1;
-    height: 1500px;
+    padding: 120px 5% 100px;
+    height: 1700px;
+}
+
+.Box-Container3 {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.Section1 {
     position: relative;
-    top: -280px;
-
 }
 
-.imagen3{
-    height: 400px;
-    position: relative;
-    top: 40px;
-    left: 25px;
-}
-
-
-
-.Section2{
-    text-align: left;
-    position: absolute;
-    top: 90px;
-    left: 600px;
-    background-color: wheat;
-    height: 320px;
-    border-radius: 30px;
-}
-
-.text7{
-    margin: 10px;
-    color: rgb(100, 0, 0);
-    font-size: 2rem;
-}
-
-
-.text8{
-    font-family: 'Playfair Display', serif;
-    margin: 10px;
-}
-
-.text9{
-    font-family: 'Playfair Display', serif;
-    margin: 10px;
-    color: rgb(178 80 0);
-}
-
-.text10{
-    margin: 10px;
-}
-
-.imagen4{
-    height: 250px;
-}
-
-
-.Products1{
-    height: 400px;
-    background-color: #b16327;
-    width: 300px;
+.imagen3 {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
     border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
 }
 
+.Section2 {
+    text-align: left;
+}
 
-.Box-Container4{
-    position: relative;
+.Text-container {
+    max-width: 550px;
+}
+
+.text7 {
+    color: #c17a4a;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.text8 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #3f2a1e;
+    margin-bottom: 1.5rem;
+}
+
+.text9 {
+    font-size: 1.12rem;
+    line-height: 1.85;
+    color: #444;
+    font-weight: 400;
+}
+
+.Box-Container4 {
+    max-width: 1400px;
     text-align: center;
-    top: 65px;
-    background-color:wheat;
-    height: 550px;
+    position: relative;
+    top: 30px;
 }
 
+.text10 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    color: #3f2a1e;
+}
 
-.Products-container{
+.text11 {
+    font-size: 1.4rem;
+    color: #8c6642;
+    margin-bottom: 3.5rem;
+    font-weight: 500;
+}
+
+.Products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.Products1,
+.Products2 {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.Products1:hover,
+.Products2:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.imagen4 {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.Products1:hover .imagen4,
+.Products2:hover .imagen4 {
+    transform: scale(1.07);
+}
+
+.Products1 h3,
+.Products2 h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    margin: 1.2rem 1.2rem 0.7rem;
+    color: #3f2a1e;
+}
+
+.Products1 p,
+.Products2 p {
+    padding: 0 1.2rem 1.6rem;
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+.Values-container{
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
+
+.Values-container2{
+ display: grid;
+ grid-auto-flow: column;
+ gap: 100px;
+}
+
+.Info-container{
+    position: relative;
+    top: 180px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:#43190580;
-    height: 450px;
-    border-radius: 30px;
+    gap: 50px;
+}
+
+.Info-container1 h1,
+.Info-container2 h1 {
+    font-family: 'Playfair Display', serif;
+    color: #3f2a1e;
+}
+
+.Info-container1 h3,
+.Info-container2 h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+    line-height: 1.6;
+}
+
+.Info-container1 p,
+.Info-container2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c17a4a;
+}
+
+.Info-container1,
+.Info-container2 {
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem;
 }
 
 
+.images5{
+    height:50px ;
+}
 
-.footer-nav{
+.footer-nav {
     background-color: rgb(58, 39, 0);
     height: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-nav p{
+    position: relative;
+    top: 50px;
 }
