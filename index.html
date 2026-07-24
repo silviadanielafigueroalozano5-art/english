@@ -1,70 +1,116 @@
 <!DOCTYPE html>
+<!-- Declara que el documento utiliza HTML5. -->
+<!-- lang identifica el idioma principal del contenido inicial del documento. -->
 <html lang="en">
 
+
 <head>
+    <!-- Permite usar caracteres especiales como tildes y la ñ. -->
     <meta charset="UTF-8">
+    <!-- Hace que el diseño se adapte correctamente a celulares y tabletas. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Texto que aparece en la pestaña del navegador. -->
     <title>Ancestral Flavors and Fibers</title>
 
+
+    <!-- Prepara la conexión con Google Fonts para cargar las tipografías. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa las fuentes decorativa, serif y de texto usadas por la página. -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+
+    <!-- Enlaza una hoja de estilos externa, si existe en el proyecto. -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
 
-<!-- Checkbox oculto que controla el idioma DEBE ir al inicio del body -->
+
+<!--
+    Organización general de la página:
+    1. El encabezado contiene la navegación y los controles.
+    2. main contiene la portada y las secciones informativas.
+    3. footer muestra la información final del sitio.
+    4. El bloque style contiene todos los estilos visuales y responsive.
+-->
+
+
+<!-- Casilla oculta que funciona como interruptor para cambiar entre inglés y español. -->
 <input type="checkbox" id="lang-toggle" class="lang-checkbox">
 
+
+<!-- Encabezado principal de la página. -->
 <header>
+    <!-- Barra de navegación con logotipo, enlaces, WhatsApp y selector de idioma. -->
     <nav class="nav-box">
 
+
+        <!-- Zona izquierda: imagen de marca y nombre del emprendimiento. -->
         <div class="box-left">
-            <img class="icon1" src="images/l.jpeg">
+            <img class="icon1" src="images/l.jpeg" alt="Logotipo de Ancestral Flavors and Fibers">
+            <!-- Los títulos se separan en dos elementos para aplicar estilos diferentes. -->
             <div>
                 <h2 class="text1">Ancestral flavors</h2>
                 <h3 class="text2">and fibers</h3>
             </div>
         </div>
 
+
+        <!-- Casilla oculta que abre y cierra el menú en pantallas pequeñas. -->
         <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
 
+
+        <!-- Botón visual formado por tres líneas para el menú móvil. -->
         <label class="hamburger" for="hamburger-toggle" aria-label="Open navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
+
+        <!-- Zona derecha de la navegación. Cada enlace lleva a una sección mediante su id. -->
         <div class="box-right">
+            <!-- href apunta al id de cada sección para permitir la navegación interna sin cambiar de página. -->
             <a href="#about"><span class="en">About us</span><span class="es">Nosotros</span></a>
             <a href="#products"><span class="en">Products</span><span class="es">Productos</span></a>
             <a href="#values"><span class="en">Values</span><span class="es">Valores</span></a>
             <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
 
+
+            <!-- Botón de contacto directo que abre una conversación de WhatsApp. -->
             <div class="whatsapp-contact">
-                <img class="icon2" src="images/w.png">
+                <img class="icon2" src="images/w.png" alt="Icono de WhatsApp">
+                <!-- target="_blank" abre WhatsApp en una pestaña nueva. -->
                 <a href="https://wa.me/573208660239?text=Hola,%20quiero%20más%20información" target="_blank">
                     <span class="en">Contact us</span><span class="es">Contáctanos</span>
                 </a>
             </div>
 
+
+            <!-- Al hacer clic, cambia el contenido visible entre inglés y español. -->
             <label for="lang-toggle" class="lang-toggle">
                 <span class="en">ES</span>
                 <span class="es">EN</span>
             </label>
         </div>
 
+
     </nav>
 </header>
 
 
+
+
 <main>
 
+
+    <!-- Portada: imagen principal, mensaje de bienvenida y llamada a la acción. -->
     <div class="hero-wrapper">
-        <img class="imagen2" src="images/d.png">
+        <img class="imagen2" src="images/d.png" alt="Artesanías y productos tradicionales">
         <div class="Box-Container1">
+            <!-- Cada span contiene una traducción; CSS decide cuál se muestra según el estado de lang-toggle. -->
             <h1 class="text3">
                 <span class="en">A Tradition Woven With</span>
                 <span class="es">Una Tradición Tejida Con</span>
@@ -85,11 +131,15 @@
         </div>
     </div>
 
+
+    <!-- Contenedor general de las secciones informativas de la página. -->
     <div class="Box-Container2">
 
+
+        <!-- Sección que presenta la historia y el origen del emprendimiento. -->
         <section class="Box-Container3" id="about">
             <div class="Section1">
-                <img class="imagen3" src="images/o.jpeg">
+                <img class="imagen3" src="images/o.jpeg" alt="Familia elaborando productos tradicionales">
             </div>
             <div class="Section2">
                 <div class="Text-container">
@@ -101,6 +151,7 @@
                         <span class="en">Our history, our roots</span>
                         <span class="es">Nuestra historia, nuestras raíces</span>
                     </h1>
+                    <!-- h2 contiene la descripción extensa de la historia en los dos idiomas. -->
                     <h2 class="text9">
                         <span class="en">We were born from a love for our traditions in the Túbuga district, Mogotes.
                         We are a family business dedicated to keeping ancestral roots alive through fique weaving
@@ -115,6 +166,8 @@
             </div>
         </section>
 
+
+        <!-- Catálogo de productos elaborados de forma artesanal. -->
         <section class="Box-Container4" id="products">
             <h1 class="text10">
                 <span class="en">Our Products</span>
@@ -125,9 +178,12 @@
                 <span class="es">Hechos a mano, elaborados con amor</span>
             </h2>
 
+
+            <!-- La cuadrícula contiene una tarjeta independiente por cada producto. -->
             <div class="Products-container">
                 <article class="Products1">
-                    <img class="imagen4" src="images/bag.jpeg">
+                    <img class="imagen4" src="images/bag.jpeg" alt="Bolso ecológico tejido en fique">
+                    <!-- h3 identifica el nombre del producto y p explica sus características. -->
                     <h3><span class="en">Eco-friendly Bags</span><span class="es">Bolsos Ecológicos</span></h3>
                     <p>
                         <span class="en">Hand-woven with 100% natural fique fiber. Durable designs that blend contemporary fashion with weaving techniques inherited from our grandparents.</span>
@@ -135,8 +191,9 @@
                     </p>
                 </article>
 
+
                 <article class="Products2">
-                    <img class="imagen4" src="images/t.jpeg">
+                    <img class="imagen4" src="images/t.jpeg" alt="Hilos y accesorios de fique">
                     <h3><span class="en">Fique Threads</span><span class="es">Hilos de Fique</span></h3>
                     <p>
                         <span class="en">Small details carrying great traditions. Keychains and mini-bags woven with vibrant colors that reflect the biodiversity of our land.</span>
@@ -144,8 +201,9 @@
                     </p>
                 </article>
 
+
                 <article class="Products2">
-                    <img class="imagen4" src="images/c.jpeg">
+                    <img class="imagen4" src="images/c.jpeg" alt="Arepas de maíz pelado">
                     <h3><span class="en">Peeled Corn Arepas</span><span class="es">Arepas de Maíz Pelado</span></h3>
                     <p>
                         <span class="en">Our traditional recipe with pork rinds. Selected corn cooked over a wood fire to guarantee that authentic flavor that represents Santander's gastronomy.</span>
@@ -153,8 +211,9 @@
                     </p>
                 </article>
 
+
                 <article class="Products2">
-                    <img class="imagen4" src="images/b.jpeg">
+                    <img class="imagen4" src="images/b.jpeg" alt="Canasto artesanal multiusos">
                     <h3><span class="en">Multi-purpose Baskets</span><span class="es">Canastos Multiusos</span></h3>
                     <p>
                         <span class="en">Functional pieces for the home. Ideal for organization or decoration, crafted with basketry techniques that guarantee strength and natural beauty.</span>
@@ -164,6 +223,8 @@
             </div>
         </section>
 
+
+        <!-- Video que muestra el proceso de elaboración de los productos. -->
         <section class="Video-container">
             <h1 class="text10">
                 <span class="en">Our Craft in Motion</span>
@@ -174,12 +235,16 @@
                 <span class="es">Mira cómo damos vida a la tradición</span>
             </h2>
             <div class="video-wrapper">
+                <!-- controls muestra los botones de reproducción, volumen y pantalla completa. -->
                 <video controls>
+                    <!-- source indica la dirección del archivo y su formato para el navegador. -->
                     <source src="https://res.cloudinary.com/dg7dxxuj9/video/upload/q_auto/f_auto/v1780458694/video_st1yhr.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
 
+
+        <!-- Valores que representan la identidad y la forma de trabajo familiar. -->
         <section class="Values-container" id="values">
             <h1 class="text10">
                 <span class="en">Our Values</span>
@@ -190,30 +255,34 @@
                 <span class="es">Lo que nos define como familia</span>
             </h2>
 
+
+            <!-- Cada bloque representa un valor acompañado de un icono y una descripción. -->
             <div class="Values-container2">
                 <div class="Value">
-                    <img class="images5" src="images/heart.svg">
+                    <img class="images5" src="images/heart.svg" alt="Icono de trabajo hecho a mano">
                     <h3><span class="en">Handmade</span><span class="es">Hecho a Mano</span></h3>
                     <p><span class="en">Each piece is crafted with dedication and love.</span><span class="es">Cada pieza es elaborada con dedicación y amor.</span></p>
                 </div>
                 <div class="Value">
-                    <img class="images5" src="images/TJ.png">
+                    <img class="images5" src="images/TJ.png" alt="Icono de tradición">
                     <h3><span class="en">Tradition</span><span class="es">Tradición</span></h3>
                     <p><span class="en">We rescue and preserve our ancestral customs.</span><span class="es">Rescatamos y preservamos nuestras costumbres ancestrales.</span></p>
                 </div>
                 <div class="Value">
-                    <img class="images5" src="images/tree.svg">
+                    <img class="images5" src="images/tree.svg" alt="Icono de sostenibilidad">
                     <h3><span class="en">Sustainability</span><span class="es">Sostenibilidad</span></h3>
                     <p><span class="en">We use natural materials that care for our planet.</span><span class="es">Usamos materiales naturales que cuidan nuestro planeta.</span></p>
                 </div>
                 <div class="Value">
-                    <img class="images5" src="images/home.svg">
+                    <img class="images5" src="images/home.svg" alt="Icono de producto local">
                     <h3><span class="en">Local Product</span><span class="es">Producto Local</span></h3>
                     <p><span class="en">We support our own and strengthen our community.</span><span class="es">Apoyamos lo nuestro y fortalecemos nuestra comunidad.</span></p>
                 </div>
             </div>
         </section>
 
+
+        <!-- Sección final con los datos para solicitar información o hacer pedidos. -->
         <section class="Info-container" id="contact">
             <div class="Info-container1">
                 <p><span class="en">CONTACT</span><span class="es">CONTACTO</span></p>
@@ -227,7 +296,9 @@
                 </h3>
             </div>
 
+
             <div class="Info-container2">
+                <!-- Los datos de contacto se muestran como texto para que sean fáciles de consultar. -->
                 <p>WhatsApp</p>
                 <h1>320 866 0239</h1>
                 <p><span class="en">Location</span><span class="es">Ubicación</span></p>
@@ -235,17 +306,23 @@
             </div>
         </section>
 
+
     </div>
+
 
 </main>
 
 
+
+
+<!-- Pie de página con los derechos de autor y la ubicación del emprendimiento. -->
 <footer class="footer-nav">
     <p>
         <span class="en">&copy; 2026 Ancestral Flavors and Fibers &mdash; Vereda Túbuga, Mogotes, Santander, Colombia</span>
         <span class="es">&copy; 2026 Sabores y Fibras Ancestrales &mdash; Vereda Túbuga, Mogotes, Santander, Colombia</span>
     </p>
 </footer>
+
 
 </body>
 </html>
